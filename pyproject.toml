@@ -5,13 +5,14 @@ description = ""
 authors = [
     {name = "mayurkas",email = "mayurkas@amdocs.com"}
 ]
+package-mode = false
+
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "streamlit (>=1.45.1,<2.0.0)",
     "openpyxl (>=3.1.5,<4.0.0)",
 ]
-package-mode = false
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
