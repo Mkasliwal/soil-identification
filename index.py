@@ -3,8 +3,7 @@ from enum import Enum
 
 import pandas as pd
 
-STATIC_PATH = "./static"
-DATASET_PATH = os.path.join(STATIC_PATH, "dataset.xlsx")
+DATASET_PATH = "dataset.xlsx"
 
 df = pd.read_excel(DATASET_PATH)
 
