@@ -29,3 +29,9 @@ def filter_by_column(column: str, value: str) -> pd.DataFrame:
     record = df.query(condition)
 
     return record
+
+
+def filter_by_density(column: str, value) -> pd.DataFrame:
+    record = df[df[column] == value]
+
+    return record

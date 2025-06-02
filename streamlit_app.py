@@ -1,7 +1,7 @@
 import pandas as pd
 
 import streamlit as st
-from index import Columns, filter_by_column, get_column
+from index import Columns, filter_by_column, get_column, filter_by_density
 
 
 @st.cache_data
@@ -37,3 +37,6 @@ if st.checkbox("Filter By Soil Bulk Density"):
     )
 
     "You selected: ", density
+
+    record = filter_by_density(Columns.SOIL_DENSITY.value, density)
+    record
